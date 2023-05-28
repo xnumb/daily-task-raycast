@@ -42,7 +42,7 @@ export default function TaskForm({taskId}: {taskId: string}) {
     if (v == undefined) {
       return false
     }
-    let reg = /^[1-9][0-9]*$/
+    const reg = /^[1-9][0-9]*$/
     return reg.test(v)
   }
   
@@ -57,7 +57,7 @@ export default function TaskForm({taskId}: {taskId: string}) {
   
   const submit = (sd: taskItemType) => {
     setIsLoading(true)
-    let d = JSON.parse(JSON.stringify(DATA))
+    const d = JSON.parse(JSON.stringify(DATA))
     sd.sec = formData.sec
     sd.ts = formData.ts
     if (taskId == 'add') {
@@ -65,7 +65,7 @@ export default function TaskForm({taskId}: {taskId: string}) {
       d.push(sd)
     } else {
       sd.id = taskId
-      for(let i in d) {
+      for(const i in d) {
         if (d[i].id == taskId) {
           d[i] = sd
           break

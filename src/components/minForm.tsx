@@ -18,7 +18,7 @@ export default function MinForm({ taskId }: { taskId: string }) {
     if (v == undefined) {
       return false
     }
-    let reg = /^[1-9][0-9]*$/
+    const reg = /^[1-9][0-9]*$/
     return reg.test(v)
   }
 
@@ -32,9 +32,9 @@ export default function MinForm({ taskId }: { taskId: string }) {
       return
     }
     setIsLoading(true)
-    let min = Number(sd.min)
-    let d = JSON.parse(JSON.stringify(DATA))
-    for(let i in d) {
+    const min = Number(sd.min)
+    const d = JSON.parse(JSON.stringify(DATA))
+    for(const i in d) {
       if (d[i].id == taskId) {
         d[i].sec = min * 60
         break
@@ -64,7 +64,7 @@ export default function MinForm({ taskId }: { taskId: string }) {
         error={minError}
         onChange={minErrorValid}
         onBlur={(event) => {
-          let v = event.target.value
+          const v = event.target.value
           if (v?.length == 0) {
             setMinError("The field should't be empty!");
           } else if (!isInt(v)) {
