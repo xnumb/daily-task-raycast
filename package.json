@@ -3,7 +3,7 @@
   "name": "daily-task",
   "title": "Daily Task",
   "description": "Focus on your daily tasks.",
-  "icon": "icon.png",
+  "icon": "logo.png",
   "author": "xnumb",
   "categories": [
     "Productivity",
@@ -25,14 +25,14 @@
     },
     {
       "name": "pause",
-      "title": "Pause Task",
+      "title": "Pause Activated Task",
       "description": "Pause activated task",
       "mode": "view"
     },
     {
       "name": "menubar",
       "title": "Show Task Menu Bar",
-      "description": "Show activated task on menu bar.",
+      "description": "Show task on menu bar.",
       "mode": "menu-bar",
       "interval": "1m"
     }
@@ -42,25 +42,69 @@
       "name": "sound",
       "description": "Play sound",
       "type": "dropdown",
-      "required": true,
+      "required": false,
       "title": "Play Completion Sound",
-      "default": "",
+      "default": "Glass",
       "data": [
         {
           "title": "No Sound",
           "value": ""
         },
         {
+          "title": "Glass",
+          "value": "Glass"
+        },
+        {
+          "title": "Basso",
+          "value": "Basso"
+        },
+        {
+          "title": "Frog",
+          "value": "Frog"
+        },
+        {
+          "title": "Hero",
+          "value": "Hero"
+        },
+        {
+          "title": "Pop",
+          "value": "Pop"
+        },
+        {
           "title": "Submarine",
           "value": "Submarine"
+        },
+        {
+          "title": "Blow",
+          "value": "Blow"
+        },
+        {
+          "title": "Funk",
+          "value": "Funk"
+        },
+        {
+          "title": "Morse",
+          "value": "Morse"
+        },
+        {
+          "title": "Purr",
+          "value": "Purr"
         },
         {
           "title": "Tink",
           "value": "Tink"
         },
         {
+          "title": "Bottle",
+          "value": "Bottle"
+        },
+        {
           "title": "Ping",
           "value": "Ping"
+        },
+        {
+          "title": "Sosumi",
+          "value": "Sosumi"
         }
       ]
     },
@@ -68,7 +112,7 @@
       "name": "confetti",
       "description": "Show confetti?",
       "type": "checkbox",
-      "required": true,
+      "required": false,
       "default": true,
       "title": "Show Completion Confetti",
       "label": "show"
