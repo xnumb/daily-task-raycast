@@ -11,6 +11,10 @@ An extension for manage your Daily Task.
 ## Actions
 ![Task Actions](./metadata/daily-task-4.png)
 
+## Preferences
+- Play Completion Sound
+- Show Completion Confetti
+
 ## Command
 - Daily Task
 - Show Task Menu Bar
